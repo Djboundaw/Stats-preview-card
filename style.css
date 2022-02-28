@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+* {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+body {
+  height: 100vh;
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  overflow: scroll;
+}
+main {
+  background-color: hsl(244, 38%, 16%);
+  width: 229px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header {
+  background-image: url("img/image-header-mobile.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 168px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+header::before {
+  content: "";
+  background-color: hsla(277, 64%, 61%, 0.4);
+  width: 100%;
+  height: 168px;
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+article {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+}
+h1 {
+  font-size: 1.3rem;
+}
+strong {
+  color: hsl(277, 64%, 61%);
+  font-weight: 600;
+}
+p,
+.quotes {
+  font-size: 0.7rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.quotes {
+  margin-top: 25px;
+}
+.quotes div {
+  margin: 15px;
+}
+.quotes p {
+  text-transform: uppercase;
+  margin: 2px;
+}
+h5 {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 0;
+}
+footer {
+  font-weight: 300;
+  font-size: 0.9rem;
+  /* margin-top: 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  display: block;
+}
+
+@media screen and (min-width: 820px) {
+  main {
+    flex-direction: row-reverse;
+    width: 654px;
+    height: 240px;
+  }
+  header {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  header::before {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  article {
+    width: 50%;
+  }
+  .container {
+    text-align: left;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .quotes {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quotes div {
+    margin-left: 0;
+  }
+  .quotes p {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  h5 {
+    font-size: 0.9rem;
+  }
+  .quotes span {
+    display: block;
+  }
+}
